@@ -9,7 +9,7 @@ If this task is too easy for you, try to implement a common solution for any tim
 Answer:
 0
 
-2.) What is the equation to get 24 with 1,3,4 and 6 you can only divide, multiply or add them?Output example: 24 == 1 / 3 * 4 + 6
+2.) What is the equation to get 24 with 1,3,4 and 6 you can only divide, multiply or add them? Output example: 24 == 1 / 3 * 4 + 6
 
 Answer:
 24 == (4+3+1)*3
