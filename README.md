@@ -17,6 +17,4 @@ Answer:
 3.) Get the number 2009 using arithmetic and eleven twos. Output example: 2912 == 2 + 222 * 22222 / 22
 
 Answer:
-
-
-
+Impossible, 2009/2 is not Integer, we can't get 9 from a combination of 2-s
