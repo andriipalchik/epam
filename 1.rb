@@ -16,22 +16,39 @@ null, "" -> equal
 Your method should return true if the strings are equal and false if they are not equal.
 =end
 
-def get_sum_ASCII(str)
-    i = 0
-        while (i < str.length) do            
-            sumASCII += str.upcase
-        end    
-    return sumASCII
+def equal(str1, str2)
+    letters = ("A".."Z").to_a
+    str1_arr = str1.upcase.split(//)
+    str2_arr = str2.upcase.split(//)
+    str1_val = 0
+    for count in 0...str1_arr.length
+        if !(letters.include? str1_arr[count]) 
+        str1_val = 0
+        break
+        end  
+        for counter in 0...26
+        if str1_arr[count] == letters[counter]
+            str1_val += letters[counter].ord 
+        end
+        end
+    end
+    str2_val = 0
+    for count in 0...str2_arr.length
+        if !(letters.include? str2_arr[count]) 
+        str2_val = 0
+        break
+        end       
+        for counter in 0...26
+        if str2_arr[count] == letters[counter]
+            str2_val += letters[counter].ord 
+        end
+        end
+    end
+    if str1_val == str2_val
+        return true       
+    else
+        return false     
+    end 
 end
 
-def compare_sum_ASCII(a, b)
-    get_sum_ASCII(a) == get_sum_ASCII(b) ? true : false
-end
-
-puts ((compare_sum_ASCII('AD', 'BC')) ? 'equal' : 'not equal')
-puts ((compare_sum_ASCII('AD', 'DD')) ? 'equal' : 'not equal')
-puts ((compare_sum_ASCII('gf', 'FG')) ? 'equal' : 'not equal')
-puts ((compare_sum_ASCII('zz1', '')) ? 'equal' : 'not equal')
-puts ((compare_sum_ASCII('ZzZz', 'ffPFF')) ? 'equal' : 'not equal')
-puts ((compare_sum_ASCII('kl', 'lz')) ? 'equal' : 'not equal')
-puts ((compare_sum_ASCII(null, '')) ? 'equal' : 'not equal')
+puts(equal("AD", "BC"))
