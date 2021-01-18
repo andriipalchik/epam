@@ -6,5 +6,7 @@ temperatures = [33, 15, 17, 20, 23, 23, 28, 40, 21, 19, 31, 18, 30, 31, 28, 23, 
 sorted = temperatures.uniq.sort
 
 puts "Minimal: #{sorted[0..2]}" 
+
 puts "Average #{sorted[6..8]}"
+
 puts "Maximal: #{sorted[-3, 3]}" 
