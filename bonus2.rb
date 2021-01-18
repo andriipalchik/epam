@@ -5,9 +5,12 @@
 
 def uniqueValue(array)
     array.find { |c| array.count(c) == 1 } || "not existant"
-  end
+end
   
-  puts uniqueValue([ 1, 1, 1, 2, 1, 1 ])
-  puts uniqueValue([ 0, 0, 0.55, 0, 0 ])
-  puts uniqueValue([3, 1, 5, 3, 7, 4, 1, 5, 7])
-  puts uniqueValue([3, 1, 5, 3, 7, 4, 1, 5, 7, 4])
+puts uniqueValue([ 1, 1, 1, 2, 1, 1 ])
+
+puts uniqueValue([ 0, 0, 0.55, 0, 0 ])
+
+puts uniqueValue([3, 1, 5, 3, 7, 4, 1, 5, 7])
+
+puts uniqueValue([3, 1, 5, 3, 7, 4, 1, 5, 7, 4])
