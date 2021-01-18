@@ -6,4 +6,4 @@ x = y[0]
 x1 = y[1].capitalize
 x2 = y[2].capitalize
 
-print(x+x1+x2)
+print(x + x1 + x2)
