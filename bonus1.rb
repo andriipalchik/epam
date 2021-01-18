@@ -14,20 +14,16 @@
 
 
 def meanIndex(array)
-    array.each_with_index.map do |el,index|
-      # puts el, index
-      # print array.slice(0,index),array.slice(0,index).sum
-      # print array.slice(index+1,array.size),array.slice(index+1,array.size).sum
-      # puts
-      return index if array.slice(0,index).sum == array.slice(index+1,array.size).sum
+    array.each_with_index.map do |el, index|     
+      index if array.slice(0, index).sum == array.slice(index + 1, array.size).sum
     end
     return -1
 end
   
-  puts meanIndex([20,10,-80,10,10,15,35])
+  puts meanIndex([20, 10, -80, 10, 10, 15, 35])
 
-  puts meanIndex([10,-80,10,10,15,35])
+  puts meanIndex([10, -80, 10, 10, 15, 35])
 
-  puts meanIndex([1,100,50,-51,1,1])
+  puts meanIndex([1, 100, 50, -51, 1, 1])
 
-  puts meanIndex([1,2,3,4,3,2,1])
+  puts meanIndex([1, 2, 3, 4, 3, 2, 1])
