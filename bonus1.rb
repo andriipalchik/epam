@@ -22,9 +22,12 @@ def meanIndex(array)
       return index if array.slice(0,index).sum == array.slice(index+1,array.size).sum
     end
     return -1
-  end
+end
   
   puts meanIndex([20,10,-80,10,10,15,35])
+
   puts meanIndex([10,-80,10,10,15,35])
+
   puts meanIndex([1,100,50,-51,1,1])
+
   puts meanIndex([1,2,3,4,3,2,1])
