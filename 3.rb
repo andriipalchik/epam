@@ -82,9 +82,13 @@ books = [
 
 
 #Sorted by price 
+
 sorted = books.sort {|b, a| a[:price] <=> b[:price] }
+
 puts sorted
 
 #Filtered by tag
+
 filtered = books.transform_values{|arr| arr.select{|h|h[:tags].eql? 'ruby'}}
+
 puts filtered
