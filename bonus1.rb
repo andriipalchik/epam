@@ -17,7 +17,7 @@ def meanIndex(array)
     array.each_with_index.map do |el, index|     
       index if array.slice(0, index).sum == array.slice(index + 1, array.size).sum
     end
-    return -1
+    -1
 end
   
   puts meanIndex([20, 10, -80, 10, 10, 15, 35])
