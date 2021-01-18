@@ -3,8 +3,8 @@
 # Треба перетворити на наступний рядок 'АВЫФ ждло'. !!!! UTF-8
 
 
-s = 'ФЫВА олдж'
-r = s.split(' ')
-first_part = r[0].reverse
-second_part = r[1].reverse
+str = 'ФЫВА олдж'
+row = str.split(' ')
+first_part = row[0].reverse
+second_part = row[1].reverse
 puts first_part + " " + second_part
