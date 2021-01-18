@@ -2,8 +2,8 @@
 # "ATTGC" -> returns "TAACG", "GTAT" -> returns "CATA"
 
 def Converter(string)
-    string.gsub(/[ATCG]/,"A"=>"T","T"=>"A","C"=>"G","G"=>"C")
-  end
+    string.gsub(/[ATCG]/, "A"=>"T", "T"=>"A", "C"=>"G", "G"=>"C")
+end
   
-  puts Converter("ATTGC")
-  puts Converter("GTAT")
+puts Converter("ATTGC")
+puts Converter("GTAT")
